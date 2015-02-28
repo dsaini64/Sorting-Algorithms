@@ -25,14 +25,14 @@ public class sortingAlgorithms {
 	
 	public int[] insertionSort(int[] a){
 		
-		for(int j = 0; j < a.length - 1; j++){
+		for(int j = 0; j < a.length; j++){
 			
-			for(int i = a.length - 2; i > -1; i--){
+			for(int i = j; i > 0; i--){
 				
-				if(a[i] > a[i+1]){
-					int iPlus1Value = a[i+1];
-					a[i+1] = a[i];
-					a[i] = iPlus1Value;
+				if(a[i] < a[i-1]){
+					int iValue = a[i];
+					a[i] = a[i-1];
+					a[i-1] = iValue;
 				}
 			}
 		}
