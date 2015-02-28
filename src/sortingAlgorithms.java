@@ -27,13 +27,10 @@ public class sortingAlgorithms {
 		
 		for(int j = 0; j < a.length; j++){
 			
-			for(int i = j; i > 0; i--){
-				
-				if(a[i] < a[i-1]){
-					int iValue = a[i];
-					a[i] = a[i-1];
-					a[i-1] = iValue;
-				}
+			for(int i = j; i > 0 && a[i] < a[i-1]; i--){
+				int iValue = a[i];
+				a[i] = a[i-1];
+				a[i-1] = iValue;
 			}
 		}
 		
