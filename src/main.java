@@ -9,7 +9,8 @@ public class main {
 		
 		//s.printSorted(s.bubbleSort(a));
 		//s.printSorted(s.insertionSort(a));
-		s.printSorted(s.selectionSort(a));
+		//s.printSorted(s.selectionSort(a));
+		s.printSorted(s.mergeSort(a));
 	}
 
 }
