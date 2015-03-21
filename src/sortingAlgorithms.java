@@ -8,7 +8,7 @@ public class sortingAlgorithms {
 	
 			for(int j = 0; j < a.length - 1; j++){
 			
-				for(int i = 0; i < a.length - 1; i++){
+				for(int i = 0; i < a.length - j - 1; i++){
 				
 					if(a[i] > a[i+1]){
 						int iPlus1Value = a[i+1];
